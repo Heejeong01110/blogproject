@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+{% extends 'base.html' %}
+{% block content %}
+
+<body>
+<h1>{{blog.title}}</h1>
+<p>{{blog.pub_date}}</p>
+<p>
+{{blog.body}}
+<br><br>
+<a href = "{% url 'home' %}">돌아가기</a>
+</p>
+</body>
+</html>
+
+{% endblock %}
